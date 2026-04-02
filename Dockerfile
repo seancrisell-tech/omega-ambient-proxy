@@ -1,7 +1,7 @@
 FROM node:20-slim
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --production
+RUN npm install --omit=dev
 COPY src/ src/
 EXPOSE 8080
 CMD ["npm", "start"]
