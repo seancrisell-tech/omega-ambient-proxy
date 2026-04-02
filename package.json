@@ -1,0 +1,17 @@
+{
+  "name": "omega-ambient-noise-proxy",
+  "version": "1.0.0",
+  "description": "WebSocket proxy that adds ambient office noise to ElevenLabs AI calls via Twilio Media Streams",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.16.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
